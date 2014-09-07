@@ -1,11 +1,11 @@
 {
   "name": "gyver",
-  "version": "0.0.7",
-  "description": "CLI toolbox for designers",
+  "version": "0.0.8",
+  "description": "CLI toolbox/inspiration generator for developers and designers",
   "bin": {
     "gyver": "gyver.js"
   },
-  "author": "Pierre Reimertz",
+  "author": "Piérre Reimertz",
   "repository": "reimertz/gyver",
   "engines": {
     "node": ">=0.10.0",
@@ -17,14 +17,20 @@
   ],
   "keywords": [
     "designer",
+    "developer",
+    "toolbox",
+    "cli",
+    "inspiration",
+    "mcgyver",
+    "energy",
+    "idea",
+    "ideas",
     "methods"
   ],
   "dependencies": {
     "chalk": "~0.5.1",
     "co": "~3.1.0",
-    "commander": "1.3.1",
     "html-to-text": "^0.1.0",
-    "imaging": "0.0.2-2",
     "inquirer": "~0.7.1",
     "underscore": "^1.7.0"
   },
