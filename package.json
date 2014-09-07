@@ -1,6 +1,6 @@
 {
   "name": "gyver",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "description": "CLI toolbox for designers",
   "bin": {
     "gyver": "gyver.js"
@@ -23,6 +23,8 @@
     "chalk": "~0.5.1",
     "co": "~3.1.0",
     "commander": "1.3.1",
+    "html-to-text": "^0.1.0",
+    "imaging": "0.0.2-2",
     "inquirer": "~0.7.1",
     "underscore": "^1.7.0"
   },

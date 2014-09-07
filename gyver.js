@@ -1,6 +1,7 @@
 #!/usr/bin/env node
 "use strict";
 var inquirer = require("inquirer"),
+    htmlToText = require('html-to-text'),
     chalk = require("chalk"),
     tools = require("./tools/index.js"),
     _ = require('underscore'),
@@ -13,10 +14,10 @@ var inquirer = require("inquirer"),
             '  \\                                   /\n'+
             '   \\_________________________________/\n',
 
-    thisIsTheEnd = '\n\n';
+    thisIsTheEnd = '\n'
 
 var phases = {
-  question: chalk.green("\n\nHi dear, what's up?"),
+  question: chalk.green("\nHi dear, what's up?"),
   answers: [new inquirer.Separator(),
     'Energizers - I need Energy!',
     'Ideations - My brain is empty, I need Ideas!',
@@ -27,7 +28,7 @@ var phases = {
 };
 
 var preperation = {
-  question: "Do you have preperation to prepare?",
+  question: "Do you have time to prepare?",
   answers: [new inquirer.Separator(),
     'No, I want to start right away!',
     'Okay, like 15 Minutes or so.',
@@ -101,5 +102,6 @@ inquirer.prompt([
       }
     }
   ], function( answer ) {
-    console.log(thisIsTheEnd + getByName(answer.selection).description + thisIsTheEnd);
+    var parsedText = htmlToText.fromString(getByName(answer.selection).description);
+    console.log(thisIsTheEnd + parsedText + thisIsTheEnd);
   })});

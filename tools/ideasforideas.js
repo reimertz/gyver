@@ -1,6 +1,4 @@
-//Data collected from ideasforideas.dk at 7 september 2014
-
-var array = [
+var data = [
     {
       "phase": [
         1
@@ -1706,6 +1704,7 @@ var array = [
       "_num": 74
     }
   ]
+}
 
 
 var _ = require('underscore');
@@ -1713,11 +1712,11 @@ var _ = require('underscore');
 return module.exports = {
   filterBy: function(phase, preperation, participants){
     var matches = [];
-    _.each(array,function(object){
+    _.each(ideasforideas.data,function(object){
       if (_.contains(object.phase, phase)) {
         matches.push(object);
       } 
-      else if (object.preperation <= preperation) {matches.push(object)}
+      else if (_.contains(object.preperation, preperation)) {matches.push(object)}
       else if (_.contains(object.participants, participants)) {matches.push(object)}
     });
 
