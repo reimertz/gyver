@@ -1,6 +1,6 @@
 {
   "name": "gyver",
-  "version": "0.0.8",
+  "version": "0.0.9",
   "description": "CLI toolbox/inspiration generator for developers and designers",
   "bin": {
     "gyver": "gyver.js"
@@ -29,7 +29,6 @@
   ],
   "dependencies": {
     "chalk": "~0.5.1",
-    "co": "~3.1.0",
     "html-to-text": "^0.1.0",
     "inquirer": "~0.7.1",
     "underscore": "^1.7.0"
