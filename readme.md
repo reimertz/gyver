@@ -1,7 +1,7 @@
 gyver
 =====
 
-![](screenshot.jpg)
+![](usage.gif)
 
 Gyver is a command-line inteface for people who need inspiration when designing/developing in their terminal.
 
