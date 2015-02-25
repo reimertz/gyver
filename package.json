@@ -28,7 +28,7 @@
     "methods"
   ],
   "dependencies": {
-    "chalk": "~0.5.1",
+    "chalk": "~1.0.0",
     "html-to-text": "^0.1.0",
     "inquirer": "~0.7.1",
     "underscore": "^1.7.0"
